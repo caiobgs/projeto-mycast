@@ -1,0 +1,22 @@
+<div class="sidebar">
+  <a href="#about"><i class="fas fa-home"></i> Início</a>
+  <hr>
+  <a href="#services"> <i class="fas fa-history"></i> Histórico</a>
+  <a href="#clients"><i class="fas fa-clock"></i> Assistir Mais Tarde </a>
+  <a href="#contact"><i class="fas fa-heart"></i> Favoritos </a>
+  <hr>
+  <a href="#contact">Seguindo: </a>
+  <div class="listFollowed" *ngFor="let podcast of podcasts; let i=index">
+    <div *ngIf="i<7">
+      <a href=""><i class="fas fa-circle"></i>{{podcast.name}}</a>
+    </div>
+  </div>
+  <hr>
+  <br>
+  <div style="margin-top: 100%;">
+    <hr>
+    <a href="#contact"><i class="fas fa-comment-alt"></i> Enviar FeedBack </a>
+    <a href="#contact"><i class="fas fa-cog"></i> Configurações </a>
+  </div>
+
+</div>

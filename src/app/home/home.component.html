@@ -1,0 +1,9 @@
+<div class="overflow">
+  <div class="home">
+    <div *ngFor="let p of podcasts; let i = index">
+        <app-miniature routerLink="/details" style="float:left" [nameTitle]="p.name" [idPodCast]="p.id" [description]="p.description"></app-miniature>
+    </div>
+
+  </div>
+</div>
+

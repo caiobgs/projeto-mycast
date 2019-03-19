@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+html,body{
+  background: url("./assets/wallpaper/wallpaper4.jpg");
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #686868;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #686868;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 49, 49);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(20, 20, 20);
+
+}

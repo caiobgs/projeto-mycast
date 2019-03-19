@@ -1,0 +1,59 @@
+.header{
+  height: 60px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  -webkit-box-shadow: 1px 4px 15px -4px rgb(10, 10, 10);
+  -moz-box-shadow: 1px 4px 15px -4px rgb(10, 10, 10);
+  box-shadow: 1px 2px 15px -2px rgb(10, 10, 10);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+img{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.center {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 12px;
+}
+.center i {
+  position: absolute;
+  font-size: 20px;
+  margin: 7px;
+  color: gray;
+
+
+}
+
+.podsearch {
+  width: 300px;
+  height: 35px;
+  padding: 0px 10px 0px 35px;
+  border: 0px;
+  border-radius: 7px;
+  outline: none;
+  -webkit-transition: 0.2s; /* Safari */
+  transition: 0.2s;
+
+}
+.podsearch::placeholder {
+  color: rgb(95, 95, 95);
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.podsearch:focus{
+  border-radius: 0px;
+}
