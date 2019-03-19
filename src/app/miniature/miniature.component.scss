@@ -83,3 +83,22 @@
   color: white;
   font-size: 17px;
 }
+
+// RESPONSIVIDADE
+
+@media only screen and (max-width: 440px) {
+  .thumbnail{
+    width: 400px;
+    height: 200px;
+  }
+
+  .miniature{
+    width: 400px;
+  }
+
+  .flip-card {
+    width: 400px;
+    height: 200px;
+  }
+}
+
