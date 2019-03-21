@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { MiniatureComponent } from './miniature/miniature.component';
 import { routing } from './app.routing';
 import { DetailComponent } from './detail/detail.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DetailComponent } from './detail/detail.component';
     HomeComponent,
     MiniatureComponent,
     DetailComponent,
+    FavoriteComponent,
   ],
   imports: [
     BrowserModule,
