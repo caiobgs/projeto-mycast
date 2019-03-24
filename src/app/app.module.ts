@@ -10,6 +10,11 @@ import { MiniatureComponent } from './miniature/miniature.component';
 import { routing } from './app.routing';
 import { DetailComponent } from './detail/detail.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { HistoryComponent } from './history/history.component';
+import { LaterComponent } from './later/later.component';
+import { FollowComponent } from './follow/follow.component';
+import { ConfigurationComponent } from './configuration/configuration.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +25,11 @@ import { FavoriteComponent } from './favorite/favorite.component';
     MiniatureComponent,
     DetailComponent,
     FavoriteComponent,
+    HistoryComponent,
+    LaterComponent,
+    FollowComponent,
+    ConfigurationComponent,
+    FeedbackComponent,
   ],
   imports: [
     BrowserModule,
