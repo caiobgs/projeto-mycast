@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PodcastsService } from '../podcasts.service';
 
 @Component({
   selector: 'app-follow',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FollowComponent implements OnInit {
 
-  constructor() { }
+  podcastsFavorite = this.podcastService.podCastsFavorite;
+
+  constructor(private podcastService: PodcastsService) { }
 
   ngOnInit() {
   }

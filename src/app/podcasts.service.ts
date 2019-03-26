@@ -1453,4 +1453,84 @@ export class PodcastsService {
       ]
     },
   ]
+
+  public podCastsFavorite = [
+
+    {
+      id: 1,
+      name: 'podteste1',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+       been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+       scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
+       remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+       and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+      favorite: '1',
+      follow: '1',
+      episodes: [
+        {
+          id: 1,
+          title: 'Episodio 1: A volta dos que não foram',
+          description: ' It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        },
+        {
+          id: 2,
+          title: 'Episodio 2: Aquele que foi sem ter ido',
+          description: ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. '
+        },
+        {
+          id: 3,
+          title: 'Episodio 3: As tranças do rei careca',
+          description: ' It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        },
+        {
+          id: 4,
+          title: 'Episodio 4: Os quatro cantos das sala redonda',
+          description: ' It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        },
+        {
+          id: 5,
+          title: 'Episodio 5: Meu tio é filho único',
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: 'podteste2',
+      description: 'podcast blablablabla',
+      favorite: '1',
+      follow: '1',
+      episodes: [
+        {
+          id: 1,
+          title: 'Episodio 1: A volta dos que não foram',
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+        },
+        {
+          id: 2,
+          title: 'Episodio 2: Aquele que foi sem ter ido',
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+        },
+        {
+          id: 3,
+          title: 'Episodio 3: As tranças do rei careca',
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+        },
+        {
+          id: 4,
+          title: 'Episodio 4: Os quatro cantos das sala redonda',
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+        },
+        {
+          id: 5,
+          title: 'Episodio 5: Meu tio é filho único',
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+        }
+      ]
+    },
+  ]
+
+
+
 }
+  

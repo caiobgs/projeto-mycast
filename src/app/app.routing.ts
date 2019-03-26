@@ -19,7 +19,7 @@ const APP_ROUTES: Routes = [
   { path: 'follow', component: FollowComponent },
   { path: 'feedback', component: FeedbackComponent },
   { path: 'configuration', component: ConfigurationComponent },  
-  { path: 'contact', component: DetailComponent },
+  { path: 'details', component: DetailComponent },
 
 ];
 
