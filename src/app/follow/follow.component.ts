@@ -8,7 +8,7 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class FollowComponent implements OnInit {
 
-  podcastsFavorite = this.podcastService.podCastsFavorite;
+  podcastsFollow = this.podcastService.podCastsFollow;
 
   constructor(private podcastService: PodcastsService) { }
 

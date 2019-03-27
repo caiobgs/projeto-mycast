@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PodcastsService } from '../podcasts.service';
 @Component({
   selector: 'app-history',
   templateUrl: './history.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryComponent implements OnInit {
 
-  constructor() { }
+  podcastsHistory = this.podcastService.podCastsHistory;
+
+  constructor (private podcastService: PodcastsService) { }
 
   ngOnInit() {
   }
