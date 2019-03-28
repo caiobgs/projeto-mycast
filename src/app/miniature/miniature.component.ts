@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./miniature.component.scss']
 })
 export class MiniatureComponent implements OnInit {
-
+  
+  @Input() podPicture;
   @Input() nameTitle;
   @Input() idPodCast;
   @Input() description;

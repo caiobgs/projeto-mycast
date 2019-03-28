@@ -8,8 +8,10 @@ export class PodcastsService {
   constructor() { }
 
   public podcasts = [
-    {
+    { 
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 1,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste1',
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
        been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -45,7 +47,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 2,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste2',
       description: 'podcast blablablabla',
       episodes: [
@@ -77,7 +81,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 3,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste3',
       description: 'podcast UEhUEhUHEuhe',
       episodes: [
@@ -109,7 +115,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 4,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste4',
       description: 'euheuee blablablabla',
       episodes: [
@@ -141,7 +149,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 5,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste5',
       description: 'euheuee blablablabla',
       episodes: [
@@ -173,7 +183,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 6,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste6',
       description: 'euheuee blablablabla',
       episodes: [
@@ -205,7 +217,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 7,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste7',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -237,7 +251,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 8,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste8',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -269,7 +285,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 9,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste9',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -301,7 +319,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 10,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste10',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -333,7 +353,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 11,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste11',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -365,7 +387,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 12,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste12',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -397,7 +421,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 13,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste13',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -429,7 +455,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 14,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste14',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -461,7 +489,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 15,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste14',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -493,8 +523,10 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 16,
-      name: 'podteste1',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste11213',
       description: 'podcast lalalalalalalalaa',
       episodes: [
         {
@@ -525,7 +557,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 17,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste2',
       description: 'podcast blablablabla',
       episodes: [
@@ -557,7 +591,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 18,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste3',
       description: 'podcast UEhUEhUHEuhe',
       episodes: [
@@ -589,7 +625,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 19,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste4',
       description: 'euheuee blablablabla',
       episodes: [
@@ -621,7 +659,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 20,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste5',
       description: 'euheuee blablablabla',
       episodes: [
@@ -653,7 +693,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 21,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste6',
       description: 'euheuee blablablabla',
       episodes: [
@@ -685,7 +727,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 22,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste7',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -717,7 +761,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 23,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste8',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -749,7 +795,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 24,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste9',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -781,7 +829,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 25,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste10',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -813,7 +863,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 26,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste11',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -845,7 +897,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 27,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste12',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -877,7 +931,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 28,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste13',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -909,7 +965,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 29,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste14',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -941,7 +999,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 30,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste14',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -973,7 +1033,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 31,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste1',
       description: 'podcast lalalalalalalalaa',
       episodes: [
@@ -1005,7 +1067,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 32,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste2',
       description: 'podcast blablablabla',
       episodes: [
@@ -1037,7 +1101,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 33,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste3',
       description: 'podcast UEhUEhUHEuhe',
       episodes: [
@@ -1069,7 +1135,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 34,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste4',
       description: 'euheuee blablablabla',
       episodes: [
@@ -1101,7 +1169,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 35,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste5',
       description: 'euheuee blablablabla',
       episodes: [
@@ -1133,7 +1203,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 36,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste6',
       description: 'euheuee blablablabla',
       episodes: [
@@ -1165,7 +1237,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 37,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste7',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1197,7 +1271,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 38,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste8',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1229,7 +1305,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 39,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste9',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1261,7 +1339,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 40,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste10',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1293,7 +1373,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 41,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste11',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1325,7 +1407,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 42,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste12',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1357,7 +1441,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 43,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste13',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1389,7 +1475,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 44,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste14',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1421,7 +1509,9 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 45,
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste14',
       description: 'asdsasad geblablablabegela',
       episodes: [
@@ -1457,8 +1547,10 @@ export class PodcastsService {
   public podCastsLater = [
 
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 1,
-      name: 'podteste1',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste11000',
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
        been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
        scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -1495,8 +1587,10 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 2,
-      name: 'podteste2',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste2149',
       description: 'podcast blablablabla',
       favorite: '1',
       follow: '1',
@@ -1533,8 +1627,10 @@ export class PodcastsService {
   public podCastsFavorite = [
 
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 1,
-      name: 'podteste1',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste11111111',
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
        been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
        scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -1571,8 +1667,10 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 2,
-      name: 'podteste2',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste1213132',
       description: 'podcast blablablabla',
       favorite: '1',
       follow: '1',
@@ -1609,8 +1707,10 @@ export class PodcastsService {
   public podCastsHistory = [
 
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 1,
-      name: 'podteste1',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste1091',
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
        been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
        scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -1647,8 +1747,10 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 2,
-      name: 'podteste2',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste193812',
       description: 'podcast blablablabla',
       favorite: '1',
       follow: '1',
@@ -1685,8 +1787,10 @@ export class PodcastsService {
   public podCastsFollow = [
 
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 1,
-      name: 'podteste1',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podteste11919dhu1h',
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
        been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
        scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -1723,8 +1827,10 @@ export class PodcastsService {
       ]
     },
     {
+      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 2,
-      name: 'podteste2',
+      banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+      name: 'podtest1uide2',
       description: 'podcast blablablabla',
       favorite: '1',
       follow: '1',
