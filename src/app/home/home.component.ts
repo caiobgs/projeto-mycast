@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() { }
 
   changepodcast(i) {
-    localStorage.setItem('podCastId', i);
+    localStorage.setItem('indexPodCastDetail', i);
   }
 
 }

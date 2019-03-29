@@ -1,14 +1,16 @@
 .sidebar{
   margin-top: 60px;
-  height: 100vh;
+  height: 100%;
   width: 240px;
   position: fixed;
   z-index: 1;
   top: 0;
+  object-fit: contain;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 .listFollowed a{
