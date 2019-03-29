@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PodcastsService {
 
-  constructor() { }
-
   public podcasts = [
-    { 
-      picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
+    {
+      picture : 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       id: 1,
       banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste1',
@@ -1783,7 +1782,7 @@ export class PodcastsService {
       ]
     },
   ]
-  
+
   public podCastsFollow = [
 
     {
@@ -1866,4 +1865,3 @@ export class PodcastsService {
 
 
 }
-  

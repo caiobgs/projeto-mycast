@@ -5,7 +5,7 @@
     </div>
     <br>
     <br>
-    <h1>TITLE PODCAST</h1>
+    <h1>{{ podcasts.name }}</h1>
     <hr>
     <div class="descriptionPodCast">
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -19,7 +19,7 @@
     <div class="episodes">
       <p>Episódios</p>
       <br>
-      <ul *ngFor="let pc of podcasts;">
+      <ul *ngFor="let pc of podcasts.episodes; let i = index">
         <li class="listElement">
           <div class="epBody">
             <p><i class="fas fa-play-circle"></i> {{ pc.title }}</p>

@@ -13,12 +13,12 @@ import { ModuleWithProviders } from '@angular/core';
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'history', component: HistoryComponent },  
+  { path: 'history', component: HistoryComponent },
   { path: 'later', component: LaterComponent },
   { path: 'favorite', component: FavoriteComponent },
   { path: 'follow', component: FollowComponent },
   { path: 'feedback', component: FeedbackComponent },
-  { path: 'configuration', component: ConfigurationComponent },  
+  { path: 'configuration', component: ConfigurationComponent },
   { path: 'details', component: DetailComponent },
 
 ];
