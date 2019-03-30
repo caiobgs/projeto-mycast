@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { PodcastsService } from '../podcasts.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-favorite',
@@ -8,11 +8,13 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class FavoriteComponent implements OnInit {
   
-  podcastsFavorite = this.podcastService.podCastsFavorite;
+  podcastsFavorite = this.podcastService.podcastsFavorite;
 
   constructor(private podcastService: PodcastsService) { }
+  
+  ngOnInit() { }
 
-  ngOnInit() {
+  changepodcastFavorite(i) {
+    localStorage.setItem('indexPodCastFavoriteDetail', i);
   }
-
 }

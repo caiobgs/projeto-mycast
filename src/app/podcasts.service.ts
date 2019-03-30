@@ -1623,11 +1623,11 @@ export class PodcastsService {
     },
   ]
 
-  public podCastsFavorite = [
-
+  public podcastsFavorite = [
     {
+      bosta: 'bosta',
       picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
-      id: 1,
+      id: 50,
       banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste11111111',
       description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -1667,7 +1667,7 @@ export class PodcastsService {
     },
     {
       picture: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
-      id: 2,
+      id: 51,
       banner: 'https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png',
       name: 'podteste1213132',
       description: 'podcast blablablabla',
@@ -1701,8 +1701,8 @@ export class PodcastsService {
         }
       ]
     },
-  ]
-
+  ];
+  
   public podCastsHistory = [
 
     {
