@@ -7,8 +7,6 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class LaterComponent implements OnInit {
 
-  podcastsLater = this.podcastService.podCastsLater;
-
   constructor(private podcastService: PodcastsService) { }
 
   ngOnInit() {

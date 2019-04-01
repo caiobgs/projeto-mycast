@@ -7,8 +7,6 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class HistoryComponent implements OnInit {
 
-  podcastsHistory = this.podcastService.podCastsHistory;
-
   constructor (private podcastService: PodcastsService) { }
 
   ngOnInit() {

@@ -8,8 +8,6 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class FollowComponent implements OnInit {
 
-  podcastsFollow = this.podcastService.podCastsFollow;
-
   constructor(private podcastService: PodcastsService) { }
 
   ngOnInit() {

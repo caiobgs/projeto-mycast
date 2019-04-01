@@ -8,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoriteComponent implements OnInit {
   
-  podcastsFavorite = this.podcastService.podcastsFavorite;
+  podcasts = this.podcastService.podcasts;
+  podcastsFavorite = this.podcastService.podcasts;
 
   constructor(private podcastService: PodcastsService) { }
   
   ngOnInit() { }
 
   changepodcastFavorite(i) {
-    localStorage.setItem('indexPodCastFavoriteDetail', i);
+    localStorage.setItem('indexPodCastDetail', i);
+    console.log(i);
   }
 }

@@ -17,5 +17,4 @@ export class HomeComponent implements OnInit {
   changepodcast(i) {
     localStorage.setItem('indexPodCastDetail', i);
   }
-
 }

@@ -1,7 +1,9 @@
 <div class="overflow">
   <div class="home">
-    <div *ngFor="let p of podcastsFavorite; let i = index">
-        <app-miniature (click)="changepodcastFavorite(i)" routerLink="/details" style="float:left" [podPicture]="p.picture" [nameTitle]="p.name" [idPodCast]="p.id" [description]="p.description"></app-miniature>
+    <div *ngFor="let p of podcasts; let i = index">
+      <div *ngIf="podcastsFavorite[i].favorite">
+          <app-miniature (click)="changepodcastFavorite(i)" routerLink="/details" style="float:left" [podPicture]="p.picture" [nameTitle]="p.name" [idPodCast]="p.id" [description]="p.description"></app-miniature>
+      </div>
     </div>
   </div>
 </div>
