@@ -8,7 +8,7 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class DetailComponent implements OnInit {
   
-  indexPodCastDetail;  
+  indexPodCastDetail;
   podcasts;
   
   constructor(private podcastService: PodcastsService) { }

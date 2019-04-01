@@ -18,7 +18,9 @@ export class PodcastsService {
        remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
       favorite:true,
-      historic:false,
+      history:false,
+      later: true,
+      follow:true,
       episodes: [
         {
           id: 1,
@@ -55,7 +57,9 @@ export class PodcastsService {
       name: 'podteste2',
       description: 'podcast blablablabla',
       favorite:false,
-      historic:true,
+      history:true,
+      later: true,
+      follow: false,
       episodes: [
         {
           id: 1,

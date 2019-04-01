@@ -7,9 +7,15 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class LaterComponent implements OnInit {
 
+  podcasts = this.podcastService.podcasts;
+  podcastsLater = this.podcastService.podcasts;
+
   constructor(private podcastService: PodcastsService) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  changepodcastLater(i) {
+    localStorage.setItem('indexPodCastDetail', i);
   }
 
 }

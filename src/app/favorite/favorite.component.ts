@@ -17,6 +17,5 @@ export class FavoriteComponent implements OnInit {
 
   changepodcastFavorite(i) {
     localStorage.setItem('indexPodCastDetail', i);
-    console.log(i);
   }
 }

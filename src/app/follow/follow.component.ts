@@ -7,10 +7,15 @@ import { PodcastsService } from '../podcasts.service';
   styleUrls: ['./follow.component.scss']
 })
 export class FollowComponent implements OnInit {
+  
+  podcasts = this.podcastService.podcasts;
+  podcastsFollow = this.podcastService.podcasts;
 
   constructor(private podcastService: PodcastsService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+    changepodcastFollow(i) {
+      localStorage.setItem('indexPodCastDetail', i);
+    }
 }
