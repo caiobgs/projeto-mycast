@@ -12,7 +12,12 @@ export class SidebarComponent implements OnInit {
 
   constructor(private podcastService: PodcastsService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+  changepodcast(i) {
+    localStorage.setItem('indexPodCastDetail', i);
+    console.log( this.podcastService.podcasts[i]);
+  }
 }
+
+

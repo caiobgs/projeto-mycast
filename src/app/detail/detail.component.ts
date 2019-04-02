@@ -7,16 +7,19 @@ import { PodcastsService } from '../podcasts.service';
   styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent implements OnInit {
-  
+
   indexPodCastDetail;
   podcasts;
-  
-  constructor(private podcastService: PodcastsService) { }
-  
-  ngOnInit() {
-  
+
+  constructor(private podcastService: PodcastsService) {
     this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
     this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
-  
+  }
+
+  ngOnInit() {
+
+    this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
+    this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
+
   }
 }

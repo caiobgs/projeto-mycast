@@ -9,7 +9,7 @@
   <a routerLink="/home">Recentes: </a>
   <div class="listFollowed" *ngFor="let podcast of podcasts; let i=index">
     <div *ngIf="i<7">
-      <a href=""><i class="fas fa-circle"></i>{{podcast.name}}</a>
+      <a (click)="changepodcast(i)" routerLink="/details"><i class="fas fa-circle"></i>{{podcast.name}}</a>
     </div>
   </div>
   <hr>
