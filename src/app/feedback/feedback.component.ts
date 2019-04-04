@@ -7,7 +7,7 @@ import { Feedback } from '../feedback';
 })
 export class FeedbackComponent implements OnInit {
   
-  model = new Feedback(1, 'oi', 'oi');
+  model = new Feedback(1, '', '');
 
   submitted = false;
 
