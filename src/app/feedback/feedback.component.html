@@ -1,7 +1,45 @@
 <div class="overflow">
   <div class="home">
-    <h1>
-      feedback works!
-    </h1>
+    <div class="card" style="height: 430px;color: black;background-color: dimgrey;">
+      <br>
+      <div class="container">
+        <div [hidden]="submitted">
+          <h1>Feedback</h1>
+          <hr>
+          <form (ngSubmit)="onSubmit()" #FeedbackForm="ngForm">
+            <br>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
+              <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                Name is required
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="alterEgo">Alter Ego</label>
+              <input type="text" class="form-control" id="alterEgo" required [(ngModel)]="model.alterEgo" name="alterEgo" #alterEgo="ngModel">
+              <div [hidden]="alterEgo.valid || alterEgo.pristine" class="alert alert-danger">
+                alterEgo is required
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success" [disabled]="!FeedbackForm.form.valid">Submit</button>
+          </form>
+        </div>
+        <div [hidden]="!submitted">
+          <h4>Feedback enviado com sucesso!</h4>
+          <br>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+  .btn-success {
+    color: dimgray;
+    background-color: white;
+    border-color: white;
+  }
+</style>
