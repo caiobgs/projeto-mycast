@@ -3,16 +3,14 @@
   <hr>
   <a routerLink="/history"><i class="fas fa-history"></i> Histórico</a>
   <a routerLink="/later"><i class="fas fa-clock"></i> Assistir Mais Tarde </a>
-  <a routerLink="/favorite"><i class="fas fa-star"></i> Favoritos </a>
   <a routerLink="/follow"><i class="fas fa-heart"></i> Seguindo </a>
   <hr>
-  <a routerLink="/home">Recentes: </a>
+  <a routerLink="/favorite"> Favoritos : </a>
   <div class="listFollowed" *ngFor="let podcast of podcasts; let i=index">
     <div *ngIf="i<7">
-      <a (click)="changepodcast(i)" routerLink="/details"><i class="fas fa-circle"></i>{{podcast.name}}</a>
+      <a (click)="changepodcast(i)" routerLink="/details"><i class="fas fa-star" style="font-size: 11px;"></i>{{podcast.name}}</a>
     </div>
   </div>
   <hr>
   <a routerLink="/feedback"><i class="fas fa-comment-alt"></i> Enviar FeedBack </a>
-  <a routerLink="/configuration"><i class="fas fa-cog"></i> Configurações </a>
 </div>
