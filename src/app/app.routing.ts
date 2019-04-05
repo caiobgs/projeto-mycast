@@ -12,7 +12,7 @@ import { ModuleWithProviders } from '@angular/core';
 
 
 const APP_ROUTES: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'later', component: LaterComponent },
