@@ -14,7 +14,7 @@ export class FeedbackComponent implements OnInit {
   onSubmit() { this.submitted = true; }
 
   showFormControls(form: any) {
-    return form && form.controls['name'] && form.controls['name'].value;
+    return form && form.controls['description'] && form.controls['description'].value;
   }
 
   constructor() { }

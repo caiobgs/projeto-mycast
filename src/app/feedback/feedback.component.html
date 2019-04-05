@@ -1,35 +1,59 @@
 <div class="overflow">
   <div class="home">
-    <div class="card" style="height: 430px;color: black;background-color: dimgrey;">
+    <div class="card" style="height: 500px;color: aliceblue; background-color: #1e1f1f;">
       <br>
       <div class="container">
         <div [hidden]="submitted">
-          <h1>Feedback</h1>
+          <h1><div class="text-center">FEEDBACK</div></h1>
           <hr>
-          <form (ngSubmit)="onSubmit()" #FeedbackForm="ngForm">
-            
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
-              <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                Name is required
-              </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form (ngSubmit)="onSubmit()" #FeedbackForm="ngForm">
+                
+                <div class="form-group">
+                  <label for="description">Descrição:</label>
+                  <input type="text" class="form-control" id="description" required [(ngModel)]="model.description" name="description" #description="ngModel">
+                  <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+                    Por favor, informe mais detalhes do problema!
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="alterEgo">Print do problema:</label>
+                  <input type="text" class="form-control" id="alterEgo" required [(ngModel)]="model.alterEgo" name="alterEgo" #alterEgo="ngModel">
+                  <div [hidden]="alterEgo.valid || alterEgo.pristine" class="alert alert-danger">
+                    Por favor, faça o upload de um print que demonstre o problema.
+                  </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success" [disabled]="!FeedbackForm.form.valid">Submit</button>
+              </form>
             </div>
-            
-            <div class="form-group">
-              <label for="alterEgo">Alter Ego</label>
-              <input type="text" class="form-control" id="alterEgo" required [(ngModel)]="model.alterEgo" name="alterEgo" #alterEgo="ngModel">
-              <div [hidden]="alterEgo.valid || alterEgo.pristine" class="alert alert-danger">
-                alterEgo is required
-              </div>
+            <div class="col-md-6">
+              <h1>
+                <div class="text-center">hello</div>
+              </h1>
             </div>
-            <br>
-            <button type="submit" class="btn btn-success" [disabled]="!FeedbackForm.form.valid">Submit</button>
-          </form>
+          </div>
         </div>
         <div [hidden]="!submitted">
-          <h4>Feedback enviado com sucesso!</h4>
-          <br>
+          <h1>
+            <div class="text-center">FEEDBACK</div>
+          </h1>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <form (ngSubmit)="onSubmit()" #FeedbackForm="ngForm">
+                  <h4><div class="text-center">Feedback enviado com sucesso!</div></h4>                
+                <br>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h1>
+                <div class="text-center">hello</div>
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -38,9 +62,9 @@
 
 <style>
   .btn-success {
-    color: dimgray;
-    background-color: white;
-    border-color: white;
+    color: #1e1f1f;
+    background-color: aliceblue;
+    border-color: aliceblue;
   }
 
   .alert-danger {
