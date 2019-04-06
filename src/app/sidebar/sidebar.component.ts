@@ -1,5 +1,6 @@
 import { PodcastsService } from './../podcasts.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -10,7 +11,7 @@ export class SidebarComponent implements OnInit {
 
   podcasts = this.podcastService.podcasts;
 
-  constructor(private podcastService: PodcastsService) { }
+  constructor(private podcastService: PodcastsService, public router: Router) { }
 
   ngOnInit() { }
 
@@ -18,6 +19,7 @@ export class SidebarComponent implements OnInit {
     localStorage.setItem('indexPodCastDetail', i);
     console.log( this.podcastService.podcasts[i]);
   }
+  
 }
 
 

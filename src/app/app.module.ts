@@ -17,6 +17,7 @@ import { FollowComponent } from './follow/follow.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoginComponent } from './login/login.component';
+import { AuthService } from './login/auth.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     routing
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

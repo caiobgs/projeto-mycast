@@ -1,6 +1,6 @@
 <div class="overflow">
   <div class="home">
-    <div class="card" style="width: 50%; height: 550px;color: aliceblue; background-color: #1e1f1f;">
+    <div class="card" style="width: 50%; height: 550px;color: aliceblue; background-color: #1e1f1f; margin-left: 160px;bottom: -35px;">
       <br>
       <div class="container">
         <h1>
@@ -12,7 +12,7 @@
           <div class="form-group">
             <label for="user">Usuário:</label>
             <input type="text" class="form-control"
-              id="user" required [(ngModel)]="model.user" name="user" #user="ngModel">
+              id="user" required [(ngModel)]="usuario.user" name="user" #user="ngModel">
             <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
               O campo não pode ficar em branco!
             </div>
@@ -20,14 +20,14 @@
           <div class="form-group">
             <label for="password">Senha:</label>
             <input type="password" class="form-control"
-              id="password" required [(ngModel)]="model.password" name="password" #password="ngModel">
+              id="password" required [(ngModel)]="usuario.password" name="password" #password="ngModel">
             <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
               O campo não pode ficar em branco!
             </div>
           </div>
           <br>
           <div class="text-center">
-            <button type="submit" routerLink="/home" class="btn btn-success" style="margin-top: 50px;">Entrar</button>
+            <button type="submit" class="btn btn-success" (click)="fazerLogin()" style="margin-top: 50px;">Entrar</button>
           </div>
         </form>
       </div>

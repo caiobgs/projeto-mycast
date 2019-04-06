@@ -1,11 +1,8 @@
-export class Login {
+export class Usuario {
   
-  mostrarMenuEmitter: any;
-
   constructor(
-    public id: number,
     public user: string,
     public password: string,
   ) { }
 
-}
+  }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PodcastsService } from './podcasts.service';
-import { Login } from './login';
+import { AuthService } from './login/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -11,18 +11,6 @@ import { Login } from './login';
 
 
 export class AppComponent {
-
-  // mostrarMenu: boolean = false;
-
-  // constructor(private login: Login) {
-
-  // }
-
-  // ngOnInit(){
-  //   this.login.mostrarMenuEmitter.subscribe(
-  //     mostrar => this.mostrarMenu = mostrar
-  //   );
-  // }
 
 }
 

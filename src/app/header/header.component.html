@@ -12,7 +12,9 @@
         </div>
         <div class="col-md-4">
             <div class="center" style="float: right">
-                <a routerLink="/login"><i class="fa fa-sign-out-alt" aria-hidden="true" style="background-color: #1e1f1f; color: aliceblue; font-size: 30px; border: none;"></i></a>
+                <div *ngIf="router.url != '/login'">
+                    <div (click)="onLogout()"><i class="fa fa-sign-out-alt" aria-hidden="true" style="background-color: #1e1f1f; color: aliceblue; font-size: 30px; border: none;"></i></div>
+                </div>
             </div>
         </div>
     </div>
