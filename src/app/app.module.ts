@@ -18,6 +18,8 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './login/auth.service';
+import { RegistrationComponent } from './registration/registration.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { AuthService } from './login/auth.service';
     ConfigurationComponent,
     FeedbackComponent,
     LoginComponent,
+    RegistrationComponent,
+    ForgotpasswordComponent,
   ],
   imports: [
     BrowserModule,

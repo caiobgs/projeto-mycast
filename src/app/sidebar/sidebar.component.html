@@ -1,4 +1,4 @@
-<div *ngIf="router.url != '/login'">
+<div *ngIf="router.url != '/registration' && router.url != '/login' && router.url != '/forgotpassword'">
   <div class="sidebar">
     <a routerLink="/home"><i class="fas fa-home"></i> Início</a>
     <hr>
@@ -6,7 +6,7 @@
     <a routerLink="/later"><i class="fas fa-clock"></i> Assistir Mais Tarde </a>
     <a routerLink="/follow"><i class="fas fa-heart"></i> Seguindo </a>
     <hr>
-    <a routerLink="/favorite"> Favoritos : </a>
+    <a routerLink="/favorite"> Favoritos</a>
     <div class="listFollowed" *ngFor="let podcast of podcasts; let i=index">
       <div *ngIf="i<7">
         <a (click)="changepodcast(i)" routerLink="/details"><i class="fas fa-star" style="font-size: 11px;"></i>{{podcast.name}}</a>

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from './usuario';
 import { AuthService } from './auth.service';
-import { EventEmitter } from 'events';
 
 @Component({
   
@@ -23,7 +22,6 @@ export class LoginComponent implements OnInit {
 
   fazerLogin(){
     this.authService.fazerLogin(this.usuario);
-//    console.log(this.usuario);
   }
 
 }

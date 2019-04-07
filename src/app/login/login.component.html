@@ -10,16 +10,16 @@
         <form>
           <br>
           <div class="form-group">
-            <label for="user">Usuário:</label>
-            <input type="text" class="form-control"
+            <label for="user">Usuário</label>
+            <input type="text" placeholder="Digite seu usuário" class="form-control"
               id="user" required [(ngModel)]="usuario.user" name="user" #user="ngModel">
             <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
               O campo não pode ficar em branco!
             </div>
           </div>          <br>
           <div class="form-group">
-            <label for="password">Senha:</label>
-            <input type="password" class="form-control"
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" class="form-control"
               id="password" required [(ngModel)]="usuario.password" name="password" #password="ngModel">
             <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
               O campo não pode ficar em branco!
@@ -34,7 +34,7 @@
               <label style="margin-top: 2px;">Lembrar-me</label>
             </div>
             <div class="col-md-6" style="margin-top: -25px; padding-left: 85px;">
-              Esqueceu sua senha?
+              <a routerLink="/forgotpassword">Esqueceu sua senha?</a>
             </div>
           </div>
           <div class="text-center">
@@ -44,7 +44,9 @@
       </div>
     </div>
     <div class="text-center" style="margin-top: 45px; margin-right: 215px;">
-      <h5 style="color: aliceblue">Não tem uma conta? Cadastre-se aqui</h5>
+      <a routerLink="/registration">
+        <h5 style="color: aliceblue">Não possui conta? Cadastre-se aqui</h5>
+      </a>
     </div>
   </div>
 </div>
@@ -63,10 +65,11 @@
 
   .card {
     width: 50%;
-    height: 550px;
+    height: 570px;
     color: aliceblue;
     background-color: #1e1f1f;
-    margin-left: 160px;
+    margin-left: 250px;
+    right: 100px;
     bottom: -35px;
     border-color:#313233;
     border-radius: 2.2rem;
