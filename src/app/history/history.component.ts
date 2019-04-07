@@ -7,15 +7,25 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class HistoryComponent implements OnInit {
 
-  podcasts = this.podcastService.podcasts;
-  podcastsHistory = this.podcastService.podcasts;
+  // podcasts = this.podcastService.podcasts;
+  // podcastsHistory = this.podcastService.podcasts;
   
-  constructor (private podcastService: PodcastsService) { }
+  indexPodCastDetail;
+  podcasts;
 
-  ngOnInit() { }
-  
-  changepodcastHistory(i) {
-    localStorage.setItem('indexPodCastDetail', i);
+  constructor(private podcastService: PodcastsService) {
+    this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
+    this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
   }
+
+  ngOnInit() {
+
+    this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
+    this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
+
+  }  
+  // changepodcastHistory(i) {
+  //   localStorage.setItem('indexPodCastDetail', i);
+  // }
 
 }

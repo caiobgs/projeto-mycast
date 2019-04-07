@@ -7,15 +7,24 @@ import { PodcastsService } from '../podcasts.service';
 })
 export class LaterComponent implements OnInit {
 
-  podcasts = this.podcastService.podcasts;
-  podcastsLater = this.podcastService.podcasts;
+  // podcasts = this.podcastService.podcasts;
+  // podcastsLater = this.podcastService.podcasts;
+  indexPodCastDetail;
+  podcasts;
 
-  constructor(private podcastService: PodcastsService) { }
-
-  ngOnInit() { }
-
-  changepodcastLater(i) {
-    localStorage.setItem('indexPodCastDetail', i);
+  constructor(private podcastService: PodcastsService) {
+    this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
+    this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
   }
+
+  ngOnInit() {
+
+    this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
+    this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
+
+  }
+  // changepodcastLater(i) {
+  //   localStorage.setItem('indexPodCastDetail', i);
+  // }
 
 }

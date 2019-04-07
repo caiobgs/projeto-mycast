@@ -1,10 +1,19 @@
 <div class="overflow">
-  <div class="home">
-    <div *ngFor="let p of podcasts; let i = index">
-      <div *ngIf="podcastsLater[i].later">
-        <app-miniature (click)="changepodcastLater(i)" routerLink="/details" style="float:left" [podPicture]="p.picture"
-          [nameTitle]="p.name" [idPodCast]="p.id" [description]="p.description"></app-miniature>
-      </div>
+  <div class="detail">
+    <div class="episodes">
+      <p>Assistir mais tarde</p>
+      <br>
+      <ul *ngFor="let pc of podcasts.episodes; let i = index">
+        <li class="listElement">
+          <div class="epBody">
+            <p><i class="fas fa-play-circle"></i> {{ pc.title }}</p>
+            <div class="epBodyDescription">
+              <hr>
+              <p style="padding-top: 0px;">{{ pc.description }}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
