@@ -7,19 +7,32 @@
         </div>
         <div class="col-md-4">
             <div class="center">
-                <i class="fas fa-search"></i>
-                <input class="podsearch" type="text" placeholder="Pesquisar PodCast">
+                <h1 style="color: aliceblue; font-family: Lobster; margin-top: -8px;">MyPodCast</h1>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="dropdown" style="float: right">
-                <i class="fa fa-chevron-down" aria-hidden="true" style="background-color: #1e1f1f; color: aliceblue; padding: 16px; font-size: 30px; border: none;"></i>
-                <div class="dropdown-content">
-                    <a>Link 1</a>
-                    <a>Link 2</a>
-                    <a>Link 3</a>
+            <div class="center" style="float: right;padding-bottom:20px">
+                <div *ngIf="router.url != '/login' && router.url != '/registration' && router.url != '/forgotpassword'" >
+                    <div (click)="onLogout()"><i class="fa fa-sign-out-alt" aria-hidden="true" style="background-color: #1e1f1f; color: aliceblue; font-size: 25px; border: none; cursor: pointer;"></i></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<style>
+
+    hr{
+    width: 90%;
+    border:1px solid rgba(59, 59, 59, 0.37);
+    border-radius: 20%;
+    }
+
+</style>
+<!-- <div class="dropdown" style="float: right">
+    <i class="fa fa-chevron-down" aria-hidden="true" style="background-color: #1e1f1f; color: aliceblue; padding: 16px; font-size: 30px; border: none;"></i>
+    <div class="dropdown-content">
+        <a>Link 1</a>
+        <a>Link 2</a>
+        <a>Link 3</a>
+    </div>
+</div> -->

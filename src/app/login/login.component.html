@@ -1,0 +1,77 @@
+<div class="overflow">
+  <div class="home">
+    <div class="card">
+      <br>
+      <div class="container">
+        <h1>
+          <div class="text-center">LOGIN</div>
+        </h1>
+        <hr>
+        <form>
+          <br>
+          <div class="form-group">
+            <label for="user">E-mail</label>
+            <input type="email" placeholder="Digite seu usuário" class="form-control"
+              id="user" required [(ngModel)]="usuario.user" name="user" #user="ngModel">
+            <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
+              O campo não pode ficar em branco!
+            </div>
+          </div>          <br>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" class="form-control"
+              id="password" required [(ngModel)]="usuario.password" name="password" #password="ngModel">
+            <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+              O campo não pode ficar em branco!
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-1">
+              <input type="checkbox" style="margin-left: 20px;">
+            </div>
+            <div class="col-md-5">
+              <label style="margin-top: 2px;">Lembrar-me</label>
+            </div>
+            <div class="col-md-6" style="margin-top: -25px; padding-left: 85px;">
+              <a routerLink="/forgotpassword">Esqueceu sua senha?</a>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-success" (click)="fazerLogin()" style="margin-top: 50px;">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 45px; margin-right: 215px;">
+      <a routerLink="/registration">
+        <h5 style="color: aliceblue">Não possui conta? Cadastre-se aqui</h5>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .btn-success {
+    color: #1e1f1f;
+    background-color: aliceblue;
+    border-color: aliceblue;
+  }
+
+  .alert-danger {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .card {
+    width: 50%;
+    height: 570px;
+    color: aliceblue;
+    background-color: #1e1f1f;
+    margin-left: 250px;
+    right: 100px;
+    bottom: -35px;
+    border-color:#313233;
+    border-radius: 2.2rem;
+  }
+</style>

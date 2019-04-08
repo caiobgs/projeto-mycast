@@ -14,19 +14,18 @@ export class DetailComponent implements OnInit {
 
   constructor(private podcastService: PodcastsService,
               private showPlayerService: ShowPlayerService) {
-    this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
-    this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
   }
 
   ngOnInit() {
-
     this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
     this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
-
   }
 
-  exibePlayer() {
+  exibePlayer(index) {
     this.showPlayerService.changeShowPlayer(true);
+    this.podcastService.changeShowPodcast(this.podcasts.episodes[index]);
+    localStorage.setItem('indexPodCastEpisode', index);
+    console.log(index);
   }
 
 }

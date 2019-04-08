@@ -1,5 +1,15 @@
 <div class="overflow">
   <div class="home">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center">
+          <input class="podsearch" type="text" placeholder="Pesquisar PodCast" style="width: 90%; opacity: 0.7; overflow: auto;">
+          <i class="fas fa-search" style="color: aliceblue; padding-left: 20px;"></i>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
     <div *ngFor="let p of podcasts; let i = index">
       <div *ngIf="podcastsFollow[i].follow">
         <app-miniature (click)="changepodcastFollow(i)" routerLink="/details" style="float:left" [podPicture]="p.picture"

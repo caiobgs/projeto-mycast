@@ -1,6 +1,6 @@
 <div class="overflow">
   <div class="home">
-    <div class="card" style="height: 500px;color: aliceblue; background-color: #1e1f1f;">
+    <div class="card" style="height: 550px;color: aliceblue; background-color: #1e1f1f;">
       <br>
       <div class="container">
         <div [hidden]="submitted">
@@ -10,9 +10,9 @@
             <div class="col-md-6">
               <form (ngSubmit)="onSubmit()" #FeedbackForm="ngForm" style="padding-left: 40px;">
                 <br>
-                <div class="text-center">
-                  <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                <div class="form-group">
+                  <div class="rating" style="margin-right: 115px;">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" ></label>
                     <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
                     <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
                     <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
@@ -21,14 +21,17 @@
                 </div>
                 <br>
                 <div class="form-group">
-                  <label for="description">Descrição:</label>
+                  <br>
+                  <br>
+                  
+                  <label for="description">Descrição</label>
                   <input type="text" style="height: 140px; border-bottom-width: 1px;padding-bottom: 100px;" class="form-control" id="description" required [(ngModel)]="model.description" name="description" #description="ngModel">
                   <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-                    Por favor, informe mais detalhes do problema!
+                    O campo não pode ficar em branco!
                   </div>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-success" [disabled]="!FeedbackForm.form.valid">Submit</button>
+                <button type="submit" class="btn btn-success" [disabled]="!FeedbackForm.form.valid">Enviar</button>
               </form>
             </div>
             <div class="col-md-6">
@@ -49,7 +52,7 @@
                     <br>
                     <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">Av. Mascarenhas de Morais, 1915 </h5>
                     <br>
-                    <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">+55 81 51-1519 </h5>
+                    <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">+55 81 3151-1519 </h5>
                     <br>
                     <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">unibratec@unibratec.edu.br </h5>
                     <br>
@@ -101,7 +104,7 @@
                     <br>
                     <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">Av. Mascarenhas de Morais, 1915 </h5>
                     <br>
-                    <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">+55 81 51-1519 </h5>
+                    <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">+55 81 3151-1519 </h5>
                     <br>
                     <h5 style="text-align: start; padding-top: 6px; margin-left: -40px;">unibratec@unibratec.edu.br </h5>
                     <br>
@@ -135,63 +138,65 @@
   }
 
   .alert-danger {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 </style>
 <style>
-  
-	.h1 {
-    font-family: 'Lobster', cursive;
-		margin: 50px 20px 40px;
-		font-size: 50px;
-		letter-spacing: 0.5px;
-		color: #999999;
-		text-align: center;
-	}
 
-  $stars: 5;
-  $star-size: 40px;
-  $star-spacing: 2px;
-  $star-on-color: #F9DF4A;
-  $star-off-color: #CCCCCC;
+ .rating {
+      float: right;
+    }
 
-.rating {
-	width: ($star-size * $stars) + ($star-spacing * ($stars - 1));
-	height: $star-size;
-	margin: 0 auto;
-	padding: 40px 50px;
-	border: 1px solid #CCCCCC;
-	background: #F9F9F9;
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .rating:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
 
-	label {
-		float: right;
-		position: relative;
-		width: $star-size;
-		height: $star-size;
-		cursor: pointer;
-		
-		&:not(:first-of-type) {
-			padding-right: $star-spacing;
-		}
-		
-		&:before {
-			content: "\2605";
-			font-size: $star-size + 2px;
-			color: $star-off-color;
-			line-height: 1;
-		}
-	}
-	
-	input {
-		display: none;
-	}
-	
-	input:checked ~ label:before,
-	&:not(:checked) > label:hover:before,
-	&:not(:checked) > label:hover ~ label:before {
-		color: $star-on-color;
-	}
-}
+    .rating:not(:checked) > label {
+        float: right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:300%;
+        /* line-height:1.2; */
+        color: rgb(206, 202, 202);
+    }
+
+    .rating:not(:checked) > label:before {
+        content: '★ ';
+    }
+
+    .rating > input:checked ~ label {
+        color: #FBB202;
+        
+    }
+
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: #FBB202;
+        
+    }
+
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color: #FBB202;
+        
+    }
+
+    .rating > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
 
 </style>

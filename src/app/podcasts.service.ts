@@ -6,6 +6,12 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class PodcastsService {
 
+
+  constructor() { }
+
+
+
+  // tslint:disable-next-line:member-ordering
   public podcasts = [
     {
       id: 1,
@@ -1171,4 +1177,14 @@ export class PodcastsService {
       ]
     }
   ];
+
+
+  private fonteShowPodcast = new BehaviorSubject(this.podcasts);
+
+  showPodcastCurrent = this.fonteShowPodcast.asObservable();
+
+  changeShowPodcast(podcasts) {
+    this.fonteShowPodcast.next(podcasts);
+  }
+
 }

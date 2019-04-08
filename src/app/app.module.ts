@@ -16,6 +16,10 @@ import { LaterComponent } from './later/later.component';
 import { FollowComponent } from './follow/follow.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './login/auth.service';
+import { RegistrationComponent } from './registration/registration.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { PlayerComponent } from './player/player.component';
 
 @NgModule({
@@ -32,6 +36,9 @@ import { PlayerComponent } from './player/player.component';
     FollowComponent,
     ConfigurationComponent,
     FeedbackComponent,
+    LoginComponent,
+    RegistrationComponent,
+    ForgotpasswordComponent,
     PlayerComponent,
   ],
   imports: [
@@ -39,7 +46,7 @@ import { PlayerComponent } from './player/player.component';
     FormsModule,
     routing
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -21,7 +21,7 @@
       <br>
       <ul *ngFor="let pc of podcasts.episodes; let i = index">
         <li class="listElement">
-          <div class="epBody" (click)="exibePlayer()">
+          <div class="epBody" (click)="exibePlayer(i)">
             <p><i class="fas fa-play-circle"></i> {{ pc.title }}</p>
             <div class="epBodyDescription"><hr><p style="padding-top: 0px;">{{ pc.description }}</p></div>
           </div>
