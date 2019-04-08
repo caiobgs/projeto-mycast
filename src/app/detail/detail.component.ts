@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PodcastsService } from '../podcasts.service';
+import { ShowPlayerService } from '../player/show-player.service';
 
 @Component({
   selector: 'app-detail',
@@ -11,7 +12,8 @@ export class DetailComponent implements OnInit {
   indexPodCastDetail;
   podcasts;
 
-  constructor(private podcastService: PodcastsService) {
+  constructor(private podcastService: PodcastsService,
+              private showPlayerService: ShowPlayerService) {
     this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
     this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
   }
@@ -22,4 +24,9 @@ export class DetailComponent implements OnInit {
     this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
 
   }
+
+  exibePlayer() {
+    this.showPlayerService.changeShowPlayer(true);
+  }
+
 }

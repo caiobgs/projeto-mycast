@@ -16,6 +16,7 @@ import { LaterComponent } from './later/later.component';
 import { FollowComponent } from './follow/follow.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
     FollowComponent,
     ConfigurationComponent,
     FeedbackComponent,
+    PlayerComponent,
   ],
   imports: [
     BrowserModule,
