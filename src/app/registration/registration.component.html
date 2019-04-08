@@ -1,21 +1,187 @@
 <div class="overflow">
   <div class="home">
-    <div class="card">
-      <br>
-      <div class="container">
-        <h1>
-          <div class="text-center">CADASTRO</div>
-        </h1>
-        <hr>
-        <form>
-          
-        </form>
+    <div [hidden]="submitted">
+      <div class="card">
+        <br>
+        <div class="container">
+          <h1>
+            <div class="text-center">CADASTRO</div>
+          </h1>
+          <hr>
+          <form (ngSubmit)="onSubmit()" #RegistrationForm="ngForm">
+            <div class="row">
+              <div class="col-md-12">
+                <br>
+                <div class="form-group">
+                  <label for="name">Nome completo</label>
+                  <input type="text" placeholder="Nome completo" class="form-control" id="name" required
+                    [(ngModel)]="registration.name" name="name" #name="ngModel">
+                  <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="form-group">
+                  <label for="street">Logradouro</label>
+                  <input type="text" placeholder="Logradouro" class="form-control" id="street" required
+                    [(ngModel)]="registration.street" name="street" #street="ngModel">
+                  <div [hidden]="street.valid || street.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="number">Número</label>
+                  <input type="number" placeholder="Número" class="form-control" id="number" required
+                    [(ngModel)]="registration.number" name="number" #number="ngModel">
+                  <div [hidden]="number.valid || number.pristine" class="alert alert-danger">
+                    Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="cep">CEP</label>
+                  <input type="text" placeholder="CEP" class="form-control" id="cep" required [(ngModel)]="registration.cep"
+                    name="cep" #cep="ngModel">
+                  <div [hidden]="cep.valid || cep.pristine" class="alert alert-danger">
+                    Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="neighborhood">Bairro</label>
+                  <input type="text" placeholder="Bairro" class="form-control" id="neighborhood" required
+                    [(ngModel)]="registration.neighborhood" name="neighborhood" #neighborhood="ngModel">
+                  <div [hidden]="neighborhood.valid || neighborhood.pristine" class="alert alert-danger">
+                    Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="city">Cidade</label>
+                  <input type="text" placeholder="Cidade" class="form-control" id="city" required [(ngModel)]="registration.city"
+                    name="city" #city="ngModel">
+                  <div [hidden]="city.valid || city.pristine" class="alert alert-danger">
+                    Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="country">País</label>
+                  <input type="text" placeholder="País" class="form-control" id="country" required
+                    [(ngModel)]="registration.country" name="country" #country="ngModel">
+                  <div [hidden]="country.valid || country.pristine" class="alert alert-danger">
+                    Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="birthday">Data de Nascimento</label>
+                  <input type="date" class="form-control" id="birthday" required [(ngModel)]="registration.birthday"
+                    name="birthday" #birthday="ngModel">
+                  <div [hidden]="birthday.valid || birthday.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="document">RG / CPF</label>
+                  <input type="text" placeholder="RG / CPF" class="form-control" id="document" required
+                    [(ngModel)]="registration.document" name="document" #document="ngModel">
+                  <div [hidden]="document.valid || document.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="phone">Telefone</label>
+                  <input type="tel" placeholder="Telefone" class="form-control" id="phone" required
+                    [(ngModel)]="registration.phone" name="phone" #phone="ngModel">
+                  <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" placeholder="Digite seu e-mail" class="form-control" id="email" required
+                    [(ngModel)]="registration.email" name="email" #email="ngModel">
+                  <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="password">Senha</label>
+                  <input type="password" placeholder="Cadastre sua senha" class="form-control" id="password" required
+                    [(ngModel)]="registration.password" name="password" #password="ngModel">
+                  <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="password_confirmation">Confirme sua senha</label>
+                  <input type="password" placeholder="Confirme sua senha" class="form-control" id="password_confirmation" required
+                    [(ngModel)]="registration.password_confirmation" name="password_confirmation"
+                    #password_confirmation="ngModel">
+                  <div [hidden]="password_confirmation.valid || password_confirmation.pristine" class="alert alert-danger">
+                    Campo Obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <br>
+                <br>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success" [disabled]="!RegistrationForm.form.valid">Cadastrar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div [hidden]="!submitted">
+      <div class="card2">
+        <br>
+        <div class="container">
+          <h3>
+            <div class="text-center">Aguardando confirmação</div>
+          </h3>
+          <hr>
+          <form (ngSubmit)="onSubmit()" #RegistrationForm="ngForm">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="text-center">
+              <h5 style="padding: 3px;">Um e-mail de confirmação foi enviado para que você ative sua conta. Verifique sua caixa de entrada.</h5>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-success" routerLink="/login" style="margin-top: 50px;">Retornar à página de login</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
+
   .btn-success {
     color: #1e1f1f;
     background-color: aliceblue;
@@ -23,19 +189,34 @@
   }
 
   .alert-danger {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   .card {
-    width: 50%;
-    height: 550px;
+    width: 70%;
+    height: 800px;
     color: aliceblue;
     background-color: #1e1f1f;
+    margin-bottom: 200px;
     margin-left: 250px;
-    right: 100px;
+    right: 200px;
     bottom: -35px;
     border-color: #313233;
     border-radius: 2.2rem;
   }
+
+  .card2 {
+    width: 70%;
+    height: 400px;
+    color: aliceblue;
+    background-color: #1e1f1f;
+    margin-left: 50px;
+    margin-top: 135px;
+    right: 200px;
+    bottom: -35px;
+    border-color: #313233;
+    border-radius: 2.2rem;
+  }
+  
 </style>

@@ -10,8 +10,8 @@
         <form>
           <br>
           <div class="form-group">
-            <label for="user">Usuário</label>
-            <input type="text" placeholder="Digite seu usuário" class="form-control"
+            <label for="user">E-mail</label>
+            <input type="email" placeholder="Digite seu usuário" class="form-control"
               id="user" required [(ngModel)]="usuario.user" name="user" #user="ngModel">
             <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
               O campo não pode ficar em branco!
@@ -59,8 +59,8 @@
   }
 
   .alert-danger {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   .card {
