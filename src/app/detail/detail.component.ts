@@ -10,6 +10,7 @@ import { ShowPlayerService } from '../player/show-player.service';
 export class DetailComponent implements OnInit {
 
   indexPodCastDetail;
+  indexPodCastDetailService;
   podcasts;
 
   constructor(private podcastService: PodcastsService,
@@ -18,6 +19,8 @@ export class DetailComponent implements OnInit {
 
   ngOnInit() {
     this.indexPodCastDetail = localStorage.getItem('indexPodCastDetail');
+    this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
+    this.podcastService.showPodcastCurrent.subscribe(showPodCast => this.podcasts = showPodCast);
     this.podcasts = this.podcastService.podcasts[this.indexPodCastDetail];
   }
 

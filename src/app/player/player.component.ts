@@ -17,7 +17,7 @@ export class PlayerComponent implements OnInit {
                 this.showPlayerService.showPlayerCurrent.subscribe(showPlayer => this.showPlayer = showPlayer);
                 this.podcastService.showPodcastCurrent.subscribe(showPodcast => this.podcasts = showPodcast);
                 this.indexPodCastEpisode = localStorage.getItem('indexPodCastEpisode');
-                this.podcasts = this.podcastService.podcasts[this.indexPodCastEpisode].episodes;
+                this.podcasts = this.podcastService.podcasts[this.indexPodCastEpisode];
                 console.log('teste');
    }
 

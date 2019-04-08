@@ -17,7 +17,8 @@ export class SidebarComponent implements OnInit {
 
   changepodcast(i) {
     localStorage.setItem('indexPodCastDetail', i);
-    console.log( this.podcastService.podcasts[i]);
+    console.log(this.podcastService.podcasts[i] );
+    this.podcastService.changeShowPodcast(this.podcastService.podcasts[i]);
   }
   
 }
