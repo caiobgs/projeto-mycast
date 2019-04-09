@@ -1,6 +1,25 @@
 <div *ngIf="showPlayer" id="player" class="player">
-    <i class="fas fa-times" (click)="closePlayer()"></i>
+  <div class="itens">
+   <!---->
     <p style="color:white">{{ podcasts.title }}</p>
+    <div class="reproducer">
 
+        <i  id="stop" class="fas fa-stop" (click)="closePlayer()"></i>
+      <div class="playHide" [hidden]="submitted">
+          <i id="play" class="fas fa-play" (click)="onSubmit()"></i>
+      </div>
+      <div class="pauseHide" [hidden]="!submitted">
+          <i id="pause" class="fas fa-pause" (click)="submitted = false"></i>
+      </div>
 
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+          style="width:70%">
+          <span class="sr-only">70% Complete</span>
+        </div>
+      </div>
+      <i id="close" class="fas fa-times" (click)="closePlayer()"></i>
+    </div>
+
+  </div>
 </div>

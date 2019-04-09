@@ -11,12 +11,61 @@
   text-align: center;
   z-index: 2;
 }
- i{
+
+#close{
   color: white;
-  font-size: 30px;
-  right:0;
-  position: absolute;
-  margin:20px;
-  margin-top: 10px;
+  font-size: 18px;
+  margin-left:30px;
+  margin-top: 3px;
   cursor: pointer;
+}
+
+#play{
+  color: white;
+  font-size: 15px;
+  margin-right:10px;
+  cursor: pointer;
+}
+#pause{
+  color: white;
+  font-size: 15px;
+  margin-right:10px;
+  cursor: pointer;
+}
+
+#stop{
+  color: white;
+  font-size: 18px;
+  margin-right:10px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.player .itens{
+  margin: 10px;
+}
+
+.player p{
+  margin-bottom:5px;
+
+}
+
+.progress{
+  width: 25%;
+  margin:0px;
+  margin: auto;
+  border-radius: 20px;
+  border: 1px solid rgb(134, 134, 134);
+  flex-grow: 1;
+}
+
+.progress-bar{
+  background: rgb(14, 14, 14);
+  border-radius: 0px;
+}
+
+.reproducer{
+  display: flex;
+  width: 26%;
+  margin: 0 auto;
 }

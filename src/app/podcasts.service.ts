@@ -1179,12 +1179,17 @@ export class PodcastsService {
   ];
 
 
-  private fonteShowPodcast = new BehaviorSubject(this.podcasts);
+  private fontShowPodcast = new BehaviorSubject(this.podcasts);
+  private fontShowPodcastEpisode = new BehaviorSubject(this.podcasts);
 
-  showPodcastCurrent = this.fonteShowPodcast.asObservable();
+  showPodcastCurrent = this.fontShowPodcast.asObservable();
+  showPodcastEpisodeCurrent = this.fontShowPodcastEpisode.asObservable();
 
   changeShowPodcast(podcasts) {
-    this.fonteShowPodcast.next(podcasts);
+    this.fontShowPodcast.next(podcasts);
   }
 
+  changeShowEpisode(episode) {
+    this.fontShowPodcastEpisode.next(episode);
+  }
 }

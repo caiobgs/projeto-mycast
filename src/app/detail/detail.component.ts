@@ -26,7 +26,7 @@ export class DetailComponent implements OnInit {
 
   exibePlayer(index) {
     this.showPlayerService.changeShowPlayer(true);
-    this.podcastService.changeShowPodcast(this.podcasts.episodes[index]);
+    this.podcastService.changeShowEpisode(this.podcasts.episodes[index]);
     localStorage.setItem('indexPodCastEpisode', index);
     console.log(index);
   }

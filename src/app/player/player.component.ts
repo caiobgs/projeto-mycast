@@ -12,13 +12,16 @@ export class PlayerComponent implements OnInit {
   indexPodCastEpisode;
   podcasts;
 
+  submitted = false;
+
+  onSubmit() { this.submitted = true; }
+
   constructor( private showPlayerService: ShowPlayerService,
                private podcastService: PodcastsService) {
                 this.showPlayerService.showPlayerCurrent.subscribe(showPlayer => this.showPlayer = showPlayer);
-                this.podcastService.showPodcastCurrent.subscribe(showPodcast => this.podcasts = showPodcast);
+                this.podcastService.showPodcastEpisodeCurrent.subscribe(showPodcast => this.podcasts = showPodcast);
                 this.indexPodCastEpisode = localStorage.getItem('indexPodCastEpisode');
                 this.podcasts = this.podcastService.podcasts[this.indexPodCastEpisode];
-                console.log('teste');
    }
 
   ngOnInit() {
