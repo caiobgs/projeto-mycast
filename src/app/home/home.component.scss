@@ -1,7 +1,14 @@
 .overflow{
-    overflow-x: hidden;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.center{
+  text-align: center;
 }
 
-app-miniature{
-  outline: none;
+#mini{
+
 }

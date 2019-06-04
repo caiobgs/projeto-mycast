@@ -8,11 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  podcasts = this.podcastService.podcasts;
+  podcasts = '';
 
   constructor(private podcastService: PodcastsService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.podcastService.getPodCast('podcast').subscribe((data: any) => {
+      console.log(data.results);
+      this.podcasts = data.results;
+    });
+  }
 
   changepodcast(i) {
     localStorage.setItem('indexPodCastDetail', i);

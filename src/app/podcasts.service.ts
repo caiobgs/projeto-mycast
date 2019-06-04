@@ -1,14 +1,22 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class PodcastsService {
 
+  config = {
+    url: 'https://itunes.apple.com'
+  };
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
+    getPodCast(nome) {
+      return this.http.jsonp(`${this.config.url}/search?term=${nome}&entity=podcast&country=BR`, 'callback');
+    }
 
 
   // tslint:disable-next-line:member-ordering

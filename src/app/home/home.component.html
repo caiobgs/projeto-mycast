@@ -1,17 +1,28 @@
-<div class="overflow">
-  <div class="home">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="center">
-          <input class="podsearch" type="text" placeholder="Pesquisar PodCast" style="width: 90%; opacity: 0.7; overflow: auto; padding-left: 20px; border-radius: 5px; border:0px">
-          <i class="fas fa-search" style="color: aliceblue; padding-left: 20px;"></i>
-          <br>
-          <br>
-        </div>
-      </div>
-    </div>
-    <div *ngFor="let p of podcasts; let i = index" >
-      <app-miniature (click)="changepodcast(i)"  routerLink="/details" style="float:left" [podPicture]="p.picture" [nameTitle]="p.name" [idPodCast]="p.id" [description]="p.description"></app-miniature>
+<div class="home">
+  <div class="center">
+    <input
+      class="podsearch"
+      type="text"
+      placeholder="Pesquisar PodCast"
+      style="width: 90%; opacity: 0.7; overflow: auto; padding-left: 20px; border-radius: 5px; border:0px"
+    />
+    <i
+      class="fas fa-search"
+      style="color: aliceblue; padding-left: 20px;"
+    ></i>
+  </div>
+  <div class="overflow">
+
+    <div id="mini"  *ngFor="let p of podcasts; let i = index">
+      <app-miniature
+        (click)="changepodcast(i)"
+        routerLink="/details"
+        [podPicture]="p.artworkUrl600"
+        [nameTitle]="p.collectionName"
+        [idPodCast]="p.collectionId"
+        [description]="p.description"
+      ></app-miniature>
     </div>
   </div>
+
 </div>
