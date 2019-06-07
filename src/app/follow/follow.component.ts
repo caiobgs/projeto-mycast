@@ -9,11 +9,15 @@ import { PodcastsService } from '../podcasts.service';
 export class FollowComponent implements OnInit {
   
   podcasts = this.podcastService.podcasts;
-  podcastsFollow = this.podcastService.podcasts;
+  podcastsFollow;
 
   constructor(private podcastService: PodcastsService) { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this.podcastService.getPodCastFollow().subscribe((data)=> {
+            this.podcastsFollow = data;
+    })
+  }
 
     changepodcastFollow(i) {
       localStorage.setItem('indexPodCastDetail', i);

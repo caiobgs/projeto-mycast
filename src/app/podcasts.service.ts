@@ -9,15 +9,27 @@ import { HttpClient } from '@angular/common/http';
 export class PodcastsService {
 
   config = {
-    url: 'https://itunes.apple.com'
+    urlitunes: 'https://itunes.apple.com',
+    urllocal:'http://localhost:8080'
   };
 
   constructor(private http: HttpClient) { }
 
     getPodCast(nome) {
-      return this.http.jsonp(`${this.config.url}/search?term=${nome}&entity=podcast&country=BR`, 'callback');
+      return this.http.jsonp(`${this.config.urlitunes}/search?term=${nome}&entity=podcast&country=BR`, 'callback');
     }
 
+    getPodCastFollow(){
+      return this.http.get(`${this.config.urllocal}/podcast/follow`);
+    }
+
+    getPodCastLater(){
+      return this.http.get(`${this.config.urllocal}/podcast/later`);
+    }
+
+    getPodCastFavorite(){
+      return this.http.get(`${this.config.urllocal}/podcast/favorite`);
+    }
 
   // tslint:disable-next-line:member-ordering
   public podcasts = [
